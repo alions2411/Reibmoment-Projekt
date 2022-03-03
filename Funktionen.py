@@ -98,10 +98,10 @@ def Identifikation(Datensatz):
 def R_square(y,y_hat):
     S1 = 0
     S2 = 0
-    for i in range(0,len(y)):
-        S1 = S1+(y_hat[i]-np.mean(y))**2
+    for i in range(0,len(y_hat)):
+        S1 = S1+(y[i]-y_hat[i])**2
         S2 = S2+(y[i]-np.mean(y))**2
-    R2 = S1/S2
+    R2 = 1-S1/S2
     R2 = round(R2,2)
     return R2 
     
