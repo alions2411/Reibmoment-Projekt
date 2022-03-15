@@ -57,10 +57,3 @@ for i in range(4):
     plt.savefig(f'Strom_RG16{i}.pdf')
     
     
-plt.figure(i+1)
-plt.plot(df_Stribeck.loc[0],df_Stribeck.loc[1])
-plt.grid()
-plt.xlabel('Drehzahl in 1/min')
-plt.ylabel('Drehmoment in Nm')
-plt.title('Stribeck Kurve RG16 mit Last = 20')
-plt.savefig('Stribeck_RG16_load20.pdf')
